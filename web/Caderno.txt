@@ -1,0 +1,29 @@
+/*** VITE ***/
+
+Traz as funcionalidades mais novas do javascript
+Faz com que o navegador entenda as novas features do JS.
+
+Ou seja converte o codigo para que todos os navegadores
+entendam o JS moderno.
+
+===========================================================
+
+/*** TAILWIND ***/
+
+para nao ter que ficar colocando multas classes no componente
+pode-se usar a forma padrão de criar as classes e utilizar
+dentro do arquivo .css as classes ja definidas no tailwild
+da seguinte forma:
+
+// Exemplo para uma classe chamada button
+
+.button{
+  @apply bg-violet-500 px-4 h-10 rounded (classes do tailwild)
+}
+
+agr no componente é só usar a classe button
+
+<button className="button" > oi </button>
+
+
+===============================================================

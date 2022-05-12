@@ -7,7 +7,7 @@ import html2canvas from 'html2canvas';
 interface FeedbackContentStepProps {
   selectedFeedbackType: FeedbackType;
   onFeedbackRestartRequest: () => void;
-  onFeedbackSend: (value: boolean) => void;
+  onFeedbackSend: (value: boolean) => void; 
 }
 
 export const FeedbackContentStep = ({selectedFeedbackType, onFeedbackRestartRequest, onFeedbackSend}: FeedbackContentStepProps) => {

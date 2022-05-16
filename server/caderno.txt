@@ -1,0 +1,42 @@
+para inicializar o projeto é necessario rodar os seguintes comandos.
+
+cria o package.json:
+npm init -y
+
+instalar o typescript na aplicação -> typescript
+instalar a tipagem do node na aplicação -> @types/node
+instalar o servidor para ficar ouvindo as mudanças na aplicação -> ts-node-dev
+todas essas libs como desenvolvimento -> -D
+
+npm i typescript @types/node ts-node-dev -D
+
+criar o arquivo tsconfi.json e mudar o "target" para es2020
+
+npx tsc --init 
+
+criar o script de dev no package.json
+ "dev": "ts-node-dev src/server.ts"
+
+instalar o express para trabalhar com as rotas na aplicação
+npm i express @types/express -D
+
+
+instalar o prisma para escrever sql com o js em ambiente de desenvolvimento:
+npm i prisma -D
+
+esse dependencia é para o modo de produção
+npm i @prisma/client
+
+npx prisma init
+
+
+
+apos criar o modelo da tabela é necessario rodar o comando abaixo 
+para realmente criar a tabela no bd
+
+npx prisma migrate dev (ou deploy)
+
+
+para ver as tabelas do bd ja criadas só rodar o comando
+
+npx prisma studio
